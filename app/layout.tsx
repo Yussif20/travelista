@@ -1,7 +1,9 @@
 // here we put stuff that will show in all the pages like nav and footer
 
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Travel",
@@ -15,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main className="relative overflow-hidden">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
