@@ -13,7 +13,10 @@ import React from "react";
 import { NAV_LINKS } from "@/constants";
 import Button from "./Button";
 
+// import { useState } from "react";
+
 const Navbar = () => {
+  // const [isClosed, setIsClosed] = useState(true);
   return (
     <nav className="flexBetween padding-container max-container-relative z-30 py-5">
       <Link href="/">
@@ -41,9 +44,16 @@ const Navbar = () => {
           type="button"
           title="Log in"
           variant="btn_dark_green"
-          icon={userSvg}
+          icon="user.svg"
         />
       </div>
+      <Image
+        src="menu.svg"
+        alt="menu"
+        width={32}
+        height={32}
+        className="inline-block cursor-pointer lg:hidden"
+      />
     </nav>
   );
 };

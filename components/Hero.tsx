@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../../public/hero.png";
+import heroImage from "../public/hero.png";
 // import heroSvg from "../../public/location.svg";
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="max-w-flex-col">
-          <Image src={heroImage} alt="hero"></Image>
+          <Image src={heroImage} alt="hero" />
         </div>
       </div>
     </>
